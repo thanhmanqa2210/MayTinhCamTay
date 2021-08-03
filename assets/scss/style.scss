@@ -3,8 +3,8 @@
     background-color: #ccc;
     text-align: center;
     width: 30rem;
-    margin: 20vh auto;
-    height: 58vh;
+    margin: 19vh auto;
+    height: 62vh;
     border-radius: .5rem;
     border: solid .2rem rgba($color: #000000, $alpha: .3);
     box-shadow: 0 0 1rem rgba($color: #000000, $alpha: .15);
@@ -35,14 +35,18 @@
 .calculations__body {
     display: flex;
     position: absolute;
-    margin: 18vh .85rem 1.8rem .58rem;
+    margin: 20vh .85rem 1.8rem .58rem;
     width: 28.5rem;
-    height: 38.5vh;
+    height: 40vh;
     border: solid .2rem rgba($color: #000000, $alpha: .15)
 }
 
 .calculations--left {
     margin-top: -.1rem;
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .calculations--right {

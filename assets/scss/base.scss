@@ -13,6 +13,7 @@ body {
     box-sizing: border-box;
     font-size: 2rem;
     font-weight: 700;
+    -moz-user-select: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -27,6 +28,7 @@ body {
     }
     &:active {
         background-color: rgba($color: #fff, $alpha: .45);
+        font-weight: 700;
     }
 }
 

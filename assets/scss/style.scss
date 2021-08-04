@@ -19,17 +19,26 @@
     border-radius: .3rem;
     margin: 1.2rem 1.2rem .8rem .8rem;
     border: solid .2rem rgba($color: #000000, $alpha: .3);
-    h2 {
-        position: absolute;
-        margin: -1.5rem 0 0 .2rem;
+    cursor: text;
+    .screen__input {
+        font-size: 4rem;
+        line-height: 4rem;
+        text-align: left;
+        vertical-align: middle;
+        width: 28rem;
+        height: 4rem;
+        padding-left: .5rem;
+        letter-spacing: -.28rem;
     }
-    h3 {
-        font-size: 3.2rem;
+    .screen__result {
         position: absolute;
-        right: .2rem;
-        bottom: -1rem;
+        font-size: 4rem;
+        max-width: 28rem;
+        line-height: 4rem;
+        right: 0.25rem;
+        letter-spacing: -.28rem;
+        bottom: 0;
     }
-    cursor:text;
 }
 
 .calculations__body {
@@ -46,6 +55,9 @@
     &__body {
         display: flex;
         flex-direction: column;
+    }
+    .body_row {
+        display: flex;
     }
 }
 

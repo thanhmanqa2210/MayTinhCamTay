@@ -19,14 +19,23 @@
   margin: 1.2rem 1.2rem .8rem .8rem;
   border: solid 0.2rem rgba(0, 0, 0, 0.3);
   cursor: text; }
-  .screen h2 {
+  .screen .screen__input {
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: left;
+    vertical-align: middle;
+    width: 28rem;
+    height: 4rem;
+    padding-left: .5rem;
+    letter-spacing: -.28rem; }
+  .screen .screen__result {
     position: absolute;
-    margin: -1.5rem 0 0 .2rem; }
-  .screen h3 {
-    font-size: 3.2rem;
-    position: absolute;
-    right: .2rem;
-    bottom: -1rem; }
+    font-size: 4rem;
+    max-width: 28rem;
+    line-height: 4rem;
+    right: 0.25rem;
+    letter-spacing: -.28rem;
+    bottom: 0; }
 
 .calculations__body {
   display: flex;
@@ -41,6 +50,8 @@
   .calculations--left__body {
     display: flex;
     flex-direction: column; }
+  .calculations--left .body_row {
+    display: flex; }
 
 .calculations--right {
   margin-top: -.1rem;

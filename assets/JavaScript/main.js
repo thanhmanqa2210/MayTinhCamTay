@@ -130,7 +130,7 @@ ac.onclick = function() {
 result.onclick = function() {
     getNumber[count] = Number(input.innerHTML.substring(index, input.innerHTML.length));
     console.log(getNumber);
-    if (getCalculation[0] === undefined)
+    if (count === 0)
         SC_result.innerHTML = getNumber[0];
     else
         for (let i = 0; i < count; i++) {

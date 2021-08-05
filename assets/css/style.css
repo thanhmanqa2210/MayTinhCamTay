@@ -20,14 +20,16 @@
   border: solid 0.2rem rgba(0, 0, 0, 0.3);
   cursor: text; }
   .screen .screen__input {
+    display: flex;
     font-size: 4rem;
     line-height: 4rem;
     text-align: left;
     vertical-align: middle;
     width: 28rem;
     height: 4rem;
-    padding-left: .5rem;
-    letter-spacing: -.28rem; }
+    text-decoration: none;
+    padding-left: .2rem;
+    letter-spacing: .1rem; }
   .screen .screen__result {
     position: absolute;
     font-size: 4rem;

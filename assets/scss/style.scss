@@ -21,14 +21,16 @@
     border: solid .2rem rgba($color: #000000, $alpha: .3);
     cursor: text;
     .screen__input {
+        display: flex;
         font-size: 4rem;
         line-height: 4rem;
         text-align: left;
         vertical-align: middle;
         width: 28rem;
         height: 4rem;
-        padding-left: .5rem;
-        letter-spacing: -.28rem;
+        text-decoration: none;
+        padding-left: .2rem;
+        letter-spacing: .1rem;
     }
     .screen__result {
         position: absolute;

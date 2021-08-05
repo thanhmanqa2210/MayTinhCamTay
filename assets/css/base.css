@@ -11,7 +11,6 @@ body {
   box-sizing: border-box;
   font-size: 2rem;
   font-weight: 700;
-  -moz-user-select: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
 .btn {
@@ -19,7 +18,8 @@ body {
   height: 5rem;
   font-size: 3rem;
   margin: .15rem .05rem .05rem .06rem;
-  border: solid 0.1px rgba(0, 0, 0, 0.3); }
+  border: solid 0.1px rgba(0, 0, 0, 0.3);
+  user-select: none; }
   .btn:hover {
     background-color: rgba(255, 255, 255, 0.6); }
   .btn:active {

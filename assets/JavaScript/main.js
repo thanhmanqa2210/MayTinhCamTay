@@ -130,27 +130,29 @@ ac.onclick = function() {
 result.onclick = function() {
     getNumber[count] = Number(input.innerHTML.substring(index, input.innerHTML.length));
     console.log(getNumber);
-    for (let i = 0; i < count; i++) {
-        switch (getCalculation[i]) {
-            case '+':
-                S += getNumber[i] + getNumber[i + 1];
-                SC_result.innerHTML = S;
-                console.log(getNumber[i + 1]);
-                break;
-            case '-':
-                S += getNumber[i] - getNumber[i + 1];
-                SC_result.innerHTML = S;
-                break;
-            case '×':
-                S += getNumber[i] * getNumber[i + 1];
-                SC_result.innerHTML = S;
-                break;
-            case '÷':
-                S += getNumber[i] / getNumber[i + 1];
-                S = Number(S.toFixed(4))
-                SC_result.innerHTML = S;
-                break;
-
+    if (getCalculation[0] === undefined)
+        SC_result.innerHTML = getNumber[0];
+    else
+        for (let i = 0; i < count; i++) {
+            switch (getCalculation[i]) {
+                case '+':
+                    S += getNumber[i] + getNumber[i + 1];
+                    SC_result.innerHTML = S;
+                    console.log(getNumber[i + 1]);
+                    break;
+                case '-':
+                    S += getNumber[i] - getNumber[i + 1];
+                    SC_result.innerHTML = S;
+                    break;
+                case '×':
+                    S += getNumber[i] * getNumber[i + 1];
+                    SC_result.innerHTML = S;
+                    break;
+                case '÷':
+                    S += getNumber[i] / getNumber[i + 1];
+                    S = Number(S.toFixed(4))
+                    SC_result.innerHTML = S;
+                    break;
+            }
         }
-    }
 }
